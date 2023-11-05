@@ -1,0 +1,34 @@
+.socialLinks {
+  display: flex;
+  margin: 0;
+  @media (max-width: 600px) {
+    margin-bottom: 20px;
+  }
+  .socialLink {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    &:nth-child(1) {
+      margin: 0;
+    }
+    &:nth-last-child(1) {
+      margin: 0;
+      @media (max-width: 600px) {
+        margin: 0px;
+      }
+    }
+    @media (max-width: 600px) {
+      width: 35px;
+      height: 35px;
+      margin-right: 20px;
+    }
+    .icon {
+      color: #060048;
+      width: 100%;
+      height: 100%;
+      &:hover {
+        color: #7c7cff80;
+      }
+    }
+  }
+}

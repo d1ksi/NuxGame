@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.navbar {
+  z-index: 990;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 15px 0px;
+  transition: 0.5s ease;
+  @media (max-width: 1240px) {
+    margin-right: 20px;
+  }
+  @media (max-width: 1040px) {
+    width: fit-content;
+  }
+  .navigation {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .navigationItems {
+      display: flex;
+      align-items: flex-start;
+      .socialAndLanguages {
+        display: none;
+        @media (max-width: 600px) {
+          margin: 40px 0px;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      .wrapperMenuLink {
+        display: flex;
+        flex-direction: column;
+        margin-right: 38px;
+
+        &:nth-last-child(1) {
+          margin: 0;
+        }
+
+        &:hover {
+          .listOfTours {
+            display: block;
+          }
+        }
+
+        .dropDown {
+          z-index: 999;
+          position: absolute;
+          top: 30px;
+          display: none;
+          background-color: #fff;
+          ul {
+            margin: 5px 10px;
+            padding: 0;
+            li {
+              color: #060048;
+              font-family: "Montserrat";
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 20px;
+              list-style-type: none;
+              margin-bottom: 10px;
+              &:nth-last-child(1) {
+                margin: 0;
+              }
+            }
+          }
+        }
+
+        .wrapperLink {
+          position: relative;
+          display: flex;
+          align-items: center;
+
+          .menuLink {
+            text-decoration: none;
+            position: relative;
+            color: #060048;
+            font-family: "Montserrat";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 20px;
+            text-transform: uppercase;
+
+            &:hover {
+              color: #7c7cff80;
+            }
+          }
+
+          &:hover {
+            & ~ .dropDown {
+              display: block;
+            }
+          }
+
+          .arr {
+            display: block;
+            margin-left: 5px;
+            height: 7px;
+            width: 8px;
+            display: block;
+            color: #060048;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+
+  .menuBtn {
+    display: none;
+  }
+
+  .closeBtn {
+    color: #060048 !important;
+  }
+
+  @media (max-width: 1040px) {
+    .navigation {
+      display: none;
+      width: 0;
+
+      &.active {
+        position: fixed;
+        transition: 0.3s all ease-in-out;
+        width: 100%;
+        height: 100%;
+        right: 0;
+        top: 0;
+        display: flex;
+        justify-content: flex-end;
+        background: rgba(1, 1, 1, 0.5);
+        .navigationItems {
+          margin-top: 60px;
+          height: 100%;
+          background: #fff;
+          width: 300px;
+          max-width: 600px;
+          padding: 50px 40px;
+          display: flex;
+          flex-direction: column;
+          box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+        }
+        .wrapperMenuLink {
+          width: 100%;
+          justify-content: space-between;
+          margin: 0px 0px 30px 0px;
+          font-size: 30px;
+
+          .wrapperLink {
+            &:hover {
+              & ~ .dropDown {
+                display: none;
+              }
+            }
+            .arr {
+              display: none;
+            }
+            .menuLink {
+              font-size: 22px;
+              letter-spacing: 2px;
+              z-index: 1;
+              position: relative;
+              margin: 5px;
+              &::before {
+                content: "";
+                position: absolute;
+                margin-left: 0px;
+                width: 200px;
+                height: 1px;
+                background-color: #060048;
+                top: 30px;
+                left: 0;
+                z-index: 0;
+                pointer-events: none;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .menuBtn {
+      display: block;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      transition: 0.3s ease;
+      color: #060048;
+
+      &.active {
+        z-index: 998;
+        transition: 0.3s ease;
+        color: #060048;
+      }
+    }
+  }
+}

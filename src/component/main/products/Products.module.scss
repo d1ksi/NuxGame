@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.productsWpapper {
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 140px;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  @media (max-width: 1240px) {
+    width: 96%;
+  }
+  @media (max-width: 500px) {
+    margin-bottom: 40px;
+  }
+  h2 {
+    margin: 60px 0px 30px 60px;
+    color: #060048;
+    font-family: "Montserrat";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    text-transform: uppercase;
+    @media (max-width: 500px) {
+      margin-left: 20px;
+    }
+    @media (max-width: 400px) {
+      margin: 30px 0px 15px 20px;
+      font-size: 40px;
+    }
+  }
+  p {
+    margin-left: 60px;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    @media (max-width: 550px) {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+  .productsCards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .products {
+      margin: 50px 0px 56px 0px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+      @media (max-width: 1040px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .productCard {
+        width: 530px;
+        flex-shrink: 0;
+        border-radius: 15px;
+        background: #f5f5f7;
+        margin: 0;
+        @media (max-width: 1150px) {
+          width: 480px;
+        }
+        @media (max-width: 1040px) {
+          width: 96%;
+          margin: 0 auto;
+        }
+        .logoAndTitle {
+          height: 100px;
+          margin: 47px 0px 28px 20px;
+          display: flex;
+          align-items: center;
+          .logoWrapper {
+            width: 84px;
+            height: 84px;
+            flex-shrink: 0;
+            background-color: #ece4ef;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+              width: 46px;
+              height: 46px;
+            }
+          }
+          h3 {
+            margin-left: 46px;
+            color: #060048;
+            font-family: "Montserrat";
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 34px;
+            @media (max-width: 500px) {
+              margin-left: 20px;
+            }
+            @media (max-width: 400px) {
+              font-size: 24px;
+              margin-right: 10px;
+            }
+          }
+        }
+        .description {
+          margin: 22px;
+          margin-top: 0px;
+          color: rgba(0, 0, 0, 0.7);
+          font-family: "Montserrat";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+}
