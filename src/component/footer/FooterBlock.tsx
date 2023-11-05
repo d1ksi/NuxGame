@@ -36,14 +36,14 @@ const guidesItems: MenuItem[] = [
 ];
 
 const logos: logo[] = [
-  { href: "/companyLogos/logo1.png" },
-  { href: "/companyLogos/logo2.png" },
-  { href: "/companyLogos/logo3.png" },
-  { href: "/companyLogos/logo4.png" },
-  { href: "/companyLogos/logo5.png" },
-  { href: "/companyLogos/logo6.png" },
-  { href: "/companyLogos/logo7.png" },
-  { href: "/companyLogos/logo8.png" },
+  { href: "./companyLogos/logo1.png" },
+  { href: "./companyLogos/logo2.png" },
+  { href: "./companyLogos/logo3.png" },
+  { href: "./companyLogos/logo4.png" },
+  { href: "./companyLogos/logo5.png" },
+  { href: "./companyLogos/logo6.png" },
+  { href: "./companyLogos/logo7.png" },
+  { href: "./companyLogos/logo8.png" },
 ];
 
 const FooterBlock: React.FC = () => {

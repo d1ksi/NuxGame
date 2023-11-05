@@ -6,9 +6,9 @@ interface Product {
   title: string;
   description: string;
 }
-const url1 = "/productsIcon/icon1.png";
-const url2 = "/productsIcon/icon2.png";
-const url3 = "/productsIcon/icon3.png";
+const url1 = "./productsIcon/icon1.png";
+const url2 = "./productsIcon/icon2.png";
+const url3 = "./productsIcon/icon3.png";
 
 const products: Product[] = [
   {

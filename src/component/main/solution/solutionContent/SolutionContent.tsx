@@ -1,8 +1,8 @@
 import styles from "./SolutionContent.module.scss";
 
-const url1 = "/solurionBulbs/solution1.png";
-const url2 = "/solurionBulbs/solution2.png";
-const url3 = "/solurionBulbs/solution3.png";
+const url1 = "./solurionBulbs/solution1.png";
+const url2 = "./solurionBulbs/solution2.png";
+const url3 = "./solurionBulbs/solution3.png";
 
 const SolutionContent: React.FC = () => {
   return (

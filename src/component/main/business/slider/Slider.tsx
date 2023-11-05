@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import styles from "./Slider.module.scss";
 
-const url1 = "/slider/logo1.png";
-const url2 = "/slider/logo2.png";
-const url3 = "/slider/logo3.png";
-const url4 = "/slider/logo4.png";
+const url1 = "./slider/logo1.png";
+const url2 = "./slider/logo2.png";
+const url3 = "./slider/logo3.png";
+const url4 = "./slider/logo4.png";
 
 interface Slide {
   logo: string;
